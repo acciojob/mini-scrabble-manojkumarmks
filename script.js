@@ -1,6 +1,7 @@
 //your code here
-const textbox = document.getElementById("evaluatedText");
-const letterCount = document.getElementById("letterCount");
-textbox.addEventListener("input", () => {
-	letterCount.innerText = textbox.value.length;
+const textbox = document.getElementById('evaluatedText');
+const countEl = document.getElementById('letterCount');
+
+textbox.addEventListener('input', () => {
+  countEl.innerText = textbox.value.length;
 });
