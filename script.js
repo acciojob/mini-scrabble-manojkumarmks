@@ -1,7 +1,6 @@
 //your code here
-const textbox = document.getElementById('evaluatedText');
-const countEl = document.getElementById('letterCount');
-
-textbox.addEventListener('input', () => {
-  countEl.innerText = textbox.value.length;
-});
+function countLetters() {
+        var text = document.getElementById("evaluatedText").value;
+        var letterCount = text.length;
+        document.getElementById("letterCount").innerHTML = letterCount;
+      }
